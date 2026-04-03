@@ -26,27 +26,6 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ogrademusic.ba" />
 
-    <!-- Schema.org structured data -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Kovane Ograde Musić",
-        "description": "Majstor kovane željezne galanterije specijaliziran za izradu ograde, kapija i rukohvata po narudžbi.",
-        "founder": { "@type": "Person", "name": "Senad Musić" },
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Kovačka 14",
-          "addressLocality": "Tuzla",
-          "addressCountry": "BA"
-        },
-        "telephone": "+387 61 123 456",
-        "email": "music.s@bih.net.ba",
-        "openingHours": "Po-Pe 08:00-17:00",
-        "priceRange": "$$"
-      }
-    </script>
-
     <title>Kovane Ograde Musić — kovana željezna galanterija</title>
 
     <!-- Google Fonts -->
@@ -80,6 +59,39 @@
     />
     <meta name="apple-mobile-web-app-title" content="Ograde Music" />
     <link rel="manifest" href="/assets/icons/site.webmanifest" />
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Kovane Ograde Musić",
+        "description": "Majstor kovane željezne galanterije specijaliziran za izradu ograde, kapija i rukohvata po narudžbi.",
+        "founder": { "@type": "Person", "name": "Senad Musić" },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Kovačka 14",
+          "addressLocality": "Tuzla",
+          "addressCountry": "BA"
+        },
+        "telephone": "+387 61 123 456",
+        "email": "music.s@bih.net.ba",
+        "openingHours": "Po-Pe 08:00-17:00",
+        "priceRange": "$$"
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          blockHeadless: true,
+          publicKey: "puuLxuZ2MV7N8lOA-",
+          limitRate: { throttle: 10000 },
+        });
+      })();
+    </script>
   </head>
   <body>
     <!-- ===================== LOADER ===================== -->
@@ -146,9 +158,6 @@
       <div class="hero-lines" aria-hidden="true"></div>
 
       <div class="hero-content">
-        <div class="hero-eyebrow">
-          <span class="section-label">Majstor Senad Musić · Tuzla</span>
-        </div>
         <h1 class="hero-title display-title">
           Kovana Željezna
           <em>Izrađena Rukom</em>
@@ -1420,9 +1429,9 @@
             </div>
 
             <!-- Form -->
-            <div
+            <form
+              id="contact-form"
               class="contact-form reveal-right"
-              role="form"
               aria-label="Kontakt forma"
             >
               <h3 class="form-title">Pošaljite Poruku</h3>
@@ -1526,7 +1535,15 @@
                   Hvala vam. Senad će se javiti u roku od jednog radnog dana.
                 </p>
               </div>
-            </div>
+              <div class="form-failure" id="form-failure">
+                <div class="form-failure-icon">✦</div>
+                <h3>Poruka Nije Poslana</h3>
+                <p>
+                  Došlo je do greške prilikom slanja poruke. Molimo pokušajte
+                  ponovno.
+                </p>
+              </div>
+            </form>
           </div>
         </div>
       </div>

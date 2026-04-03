@@ -314,6 +314,7 @@ body::before {
   gap: 5px;
   cursor: pointer;
   padding: 4px;
+  background-color: transparent;
 }
 .hamburger span {
   display: block;
@@ -1730,6 +1731,7 @@ textarea.form-control {
 .form-success.show {
   display: block;
 }
+
 .form-success-icon {
   font-size: 2rem;
   color: var(--gold);
@@ -1743,6 +1745,32 @@ textarea.form-control {
   letter-spacing: 0.1em;
 }
 .form-success p {
+  color: var(--smoke);
+  font-size: 1rem;
+}
+
+.form-failure {
+  display: none;
+  text-align: center;
+  padding: 2rem;
+}
+.form-failure.show {
+  display: block;
+}
+
+.form-failure-icon {
+  font-size: 2rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+.form-failure h3 {
+  font-family: var(--font-display);
+  color: var(--cream);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.1em;
+}
+.form-failure p {
   color: var(--smoke);
   font-size: 1rem;
 }

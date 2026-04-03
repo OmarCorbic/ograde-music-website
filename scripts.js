@@ -187,8 +187,18 @@ document.getElementById("form-submit-btn").addEventListener("click", () => {
     return;
   }
 
-  document.getElementById("form-fields").style.display = "none";
-  document.getElementById("form-success").classList.add("show");
+  emailjs.sendForm("service_q5suqyb", "template_n6wwlze", "#contact-form").then(
+    (response) => {
+      document.getElementById("form-fields").style.display = "none";
+      document.getElementById("form-success").classList.add("show");
+      console.log("SUCCESS!", response.status, response.text);
+    },
+    (error) => {
+      document.getElementById("form-fields").style.display = "none";
+      document.getElementById("form-failure").classList.add("show");
+      console.log("FAILED...", error);
+    },
+  );
 });
 
 /* ---- Smooth scroll for anchor links ---- */
