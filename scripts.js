@@ -96,53 +96,48 @@ const folderNames = [
 ];
 
 const MAX_IMAGES_PER_FOLDER = 50;
+// Get the base path (e.g., "/ograde-music/")
+const basePath = window.location.pathname.endsWith("/")
+  ? window.location.pathname
+  : window.location.pathname.split("/").slice(0, -1).join("/") + "/";
 
 async function loadGalleryFromFolder(folderName) {
-  modalGallery.innerHTML = ""; // Clear old images
-  if (!folderNames.includes(folderName)) {
-    console.warn(`Folder "${folderName}" not recognized.`);
-    return;
-  }
+  modalGallery.innerHTML = "";
 
   for (let i = 1; i <= MAX_IMAGES_PER_FOLDER; i++) {
-    const imgPath = `/assets/images/${folderName}/${i}.jpg`;
+    const imgPath = `${basePath}assets/images/${folderName}/${i}.jpg`;
 
-    // Check if image exists before adding it to the DOM
+    console.log("Searching for:", imgPath); // Check your browser console!
+
     const exists = await checkImageExists(imgPath);
 
     if (exists) {
       const imgWrapper = document.createElement("div");
       imgWrapper.className = "modal-gallery-item";
-
-      // SEO & Performance: Lazy load and Alt text
-      imgWrapper.innerHTML = `
-        <img src="${imgPath}" 
-             alt="${folderName} gallery image ${i}" 
-             loading="lazy" 
-             onerror="this.parentElement.remove();">
-      `;
+      imgWrapper.innerHTML = `<img src="${imgPath}" loading="lazy" alt="${folderName} ${i}">`;
       modalGallery.appendChild(imgWrapper);
     } else {
-      // If image 5 doesn't exist, stop looking for 6, 7, etc.
       break;
     }
   }
 }
 
-// Helper to check if file exists
 async function checkImageExists(url) {
-  return fetch(url, { method: "HEAD" })
-    .then((res) => res.ok)
-    .catch(() => false);
-}
+  try {
+    const response = await fetch(url, { method: "HEAD" });
 
-// Update your Click Listener
+    return (
+      response.ok && response.headers.get("content-type")?.includes("image")
+    );
+  } catch (error) {
+    return false;
+  }
+}
 document.querySelectorAll(".fence-card").forEach((card) => {
   card.addEventListener("click", () => {
     const type = card.dataset.type; // e.g., "kovane-ograde"
     modalTitle.textContent = card.querySelector("h3").textContent;
 
-    // Trigger the automatic loader
     loadGalleryFromFolder(type);
 
     modal.classList.add("active");
@@ -159,7 +154,6 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeModal();
 });
 
-// Close modal when quote link clicked
 document
   .getElementById("modal-quote-link")
   .addEventListener("click", closeModal);
@@ -172,7 +166,6 @@ document.getElementById("form-submit-btn").addEventListener("click", () => {
   const msg = document.getElementById("f-message").value.trim();
 
   if (!name || !email || !type || !msg) {
-    // Simple highlight
     [
       ["f-name", name],
       ["f-email", email],
