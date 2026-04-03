@@ -1,0 +1,1563 @@
+<!doctype html>
+<html lang="bs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kovane željezne ograde, kapije i rukohvati po narudžbi — izrada majstora kovača Senada Musića. Uslužujemo region vrhunskim kovačkim zanatom od 1998. Zatražite ponudu danas."
+    />
+    <meta
+      name="keywords"
+      content="kovana željezna ograda, kapija po narudžbi, dekorativni rukohvat, kovač, izrada ograde, kovačka galanterija, vrtna ograda, zaštitna ograda"
+    />
+    <meta name="author" content="Kovane Ograde Musić d.o.o." />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Kovane Ograde Musić - kovane željezne galanterije"
+    />
+    <meta
+      property="og:description"
+      content="Kovane željezne ograde, kapije i rukohvati ručno kovani po narudžbi. Vječna zanatska vještina, trajna kvaliteta."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ogrademusic.ba" />
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Kovane Ograde Musić",
+        "description": "Majstor kovane željezne galanterije specijaliziran za izradu ograde, kapija i rukohvata po narudžbi.",
+        "founder": { "@type": "Person", "name": "Senad Musić" },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Kovačka 14",
+          "addressLocality": "Tuzla",
+          "addressCountry": "BA"
+        },
+        "telephone": "+387 61 123 456",
+        "email": "music.s@bih.net.ba",
+        "openingHours": "Po-Pe 08:00-17:00",
+        "priceRange": "$$"
+      }
+    </script>
+
+    <title>Kovane Ograde Musić — kovana željezna galanterija</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;700&family=Raleway:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ===================== LOADER ===================== -->
+    <div id="loader" role="status" aria-label="Učitavanje">
+      <div class="loader-logo">Kovane Ograde Musić</div>
+      <div class="loader-bar"></div>
+    </div>
+
+    <!-- ===================== CURSOR ===================== -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- ===================== BACK TO TOP ===================== -->
+    <button id="back-top" aria-label="Nazad na vrh">
+      <svg
+        width="14"
+        height="14"
+        viewBox="0 0 14 14"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+      >
+        <path d="M7 12V2M2 7l5-5 5 5" />
+      </svg>
+    </button>
+
+    <!-- ===================== NAV ===================== -->
+    <nav id="nav" aria-label="Glavna navigacija">
+      <a href="#" class="nav-logo" aria-label="Kovane Ograde Musić početna">
+        Kovane Ograde Musić
+        <span>Osnov. 2024. Tuzla</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about">O nama</a></li>
+        <li><a href="#fences">Zanatstvo</a></li>
+        <li><a href="#process">Proces</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta" aria-label="Zatražite ponudu"
+        >Zatražite ponudu</a
+      >
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Otvori izbornik"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobilna navigacija">
+      <a href="#about" class="mobile-link">O nama</a>
+      <a href="#fences" class="mobile-link">Zanatstvo</a>
+      <a href="#process" class="mobile-link">Proces</a>
+      <a href="#contact" class="mobile-link">Kontakt</a>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <header id="hero" role="banner">
+      <div class="hero-bg"></div>
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="hero-lines" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="section-label">Majstor Senad Musić · Tuzla</span>
+        </div>
+        <h1 class="hero-title display-title">
+          Kovana Željezna
+          <em>Izrađena Rukom</em>
+        </h1>
+        <p class="hero-sub">
+          Svaka ograda, kapija i rukohvat se individualno projektuje i ručno
+          kuje prema vašim tačnim specifikacijama — trajan pečat majstorskog
+          zanata na vašem imanju.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary"
+            ><span>Zatražite Ponudu</span></a
+          >
+          <a href="#fences" class="btn-ghost">
+            Pogledajte Radove <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- == Hero composition: photo cards + icon badges == -->
+      <div class="hero-icons-grid" aria-hidden="true">
+        <div class="hero-photo p1">
+          <img
+            src="assets/images/balkonske-ograde/1.jpg"
+            alt="Kovana balkonska željezna ograda s ukrasnim elementima"
+            class="hero-photo-img"
+          />
+
+          <div class="hero-icon-badge b1">
+            <svg
+              viewBox="0 0 60 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="10"
+                y1="12"
+                x2="10"
+                y2="50"
+                stroke="#8a6e2e"
+                stroke-width="2"
+              />
+              <line
+                x1="22"
+                y1="12"
+                x2="22"
+                y2="50"
+                stroke="#c9a84c"
+                stroke-width="2.5"
+              />
+              <line
+                x1="34"
+                y1="12"
+                x2="34"
+                y2="50"
+                stroke="#8a6e2e"
+                stroke-width="2"
+              />
+              <line
+                x1="46"
+                y1="12"
+                x2="46"
+                y2="50"
+                stroke="#8a6e2e"
+                stroke-width="2"
+              />
+              <rect
+                x="8"
+                y="28"
+                width="40"
+                height="2.5"
+                rx="1"
+                fill="#6b5520"
+              />
+              <rect
+                x="7"
+                y="10"
+                width="46"
+                height="3.5"
+                rx="1"
+                fill="#4a3d18"
+              />
+              <rect
+                x="7"
+                y="48"
+                width="46"
+                height="3.5"
+                rx="1"
+                fill="#4a3d18"
+              />
+              <polygon points="10,12 7,5  13,5" fill="#c9a84c" opacity="0.9" />
+              <polygon points="22,12 19,5 25,5" fill="#c9a84c" opacity="1" />
+              <polygon points="34,12 31,5 37,5" fill="#c9a84c" opacity="0.9" />
+              <polygon points="46,12 43,5 49,5" fill="#c9a84c" opacity="0.8" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="hero-photo p2">
+          <img
+            src="assets/images/stubisne-ograde/8.jpg"
+            alt="Kovana stepenišna željezna ograda s ukrasnim elementima"
+            class="hero-photo-img"
+          />
+
+          <div class="hero-icon-badge b2">
+            <svg
+              viewBox="0 0 60 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="6"
+                y1="18"
+                x2="54"
+                y2="48"
+                stroke="#c9a84c"
+                stroke-width="2.5"
+                stroke-linecap="round"
+              />
+              <line
+                x1="12"
+                y1="24"
+                x2="12"
+                y2="54"
+                stroke="#8a6e2e"
+                stroke-width="2"
+              />
+              <line
+                x1="26"
+                y1="31"
+                x2="26"
+                y2="54"
+                stroke="#c9a84c"
+                stroke-width="2.2"
+              />
+              <line
+                x1="40"
+                y1="38"
+                x2="40"
+                y2="54"
+                stroke="#8a6e2e"
+                stroke-width="2"
+              />
+              <line
+                x1="8"
+                y1="54"
+                x2="52"
+                y2="54"
+                stroke="#6b5520"
+                stroke-width="2.5"
+                stroke-linecap="round"
+              />
+              <circle
+                cx="7"
+                cy="15"
+                r="5"
+                stroke="#c9a84c"
+                stroke-width="1"
+                fill="#1c1a19"
+              />
+              <circle cx="7" cy="15" r="2" fill="#c9a84c" opacity="0.7" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="hero-photo p3">
+          <img
+            src="assets/images/dvorisne-ograde/1.jpg"
+            alt="Kovana željezna ograda s ukrasnim elementima"
+            class="hero-photo-img"
+          />
+
+          <div class="hero-icon-badge b3">
+            <svg
+              viewBox="0 0 60 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="6" y="28" width="48" height="3" rx="1" fill="#6b5520" />
+              <rect
+                x="6"
+                y="42"
+                width="48"
+                height="2.5"
+                rx="1"
+                fill="#4a3d18"
+              />
+              <rect
+                x="6"
+                y="52"
+                width="48"
+                height="2.5"
+                rx="1"
+                fill="#4a3d18"
+              />
+              <line
+                x1="12"
+                y1="10"
+                x2="12"
+                y2="54"
+                stroke="#8a6e2e"
+                stroke-width="2.2"
+              />
+              <line
+                x1="24"
+                y1="8"
+                x2="24"
+                y2="54"
+                stroke="#c9a84c"
+                stroke-width="2.5"
+              />
+              <line
+                x1="36"
+                y1="8"
+                x2="36"
+                y2="54"
+                stroke="#c9a84c"
+                stroke-width="2.5"
+              />
+              <line
+                x1="48"
+                y1="10"
+                x2="48"
+                y2="54"
+                stroke="#8a6e2e"
+                stroke-width="2.2"
+              />
+              <polygon points="12,10 9,4  15,4" fill="#c9a84c" opacity="0.85" />
+              <polygon points="24,8  21,2  27,2" fill="#c9a84c" opacity="1" />
+              <polygon points="36,8  33,2  39,2" fill="#c9a84c" opacity="1" />
+              <polygon
+                points="48,10 45,4  51,4"
+                fill="#c9a84c"
+                opacity="0.85"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="hero-photo p4">
+          <img
+            src="assets/images/krilne-kapije/5.jpg"
+            alt="Kovana krilna željezna kapija s ukrasnim elementima"
+            class="hero-photo-img"
+          />
+
+          <div class="hero-icon-badge b4">
+            <svg
+              viewBox="0 0 60 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="4" y="8" width="7" height="50" rx="1.5" fill="#2b2826" />
+              <rect
+                x="49"
+                y="8"
+                width="7"
+                height="50"
+                rx="1.5"
+                fill="#2b2826"
+              />
+              <polygon points="7,8  3,2  11,2" fill="#c9a84c" opacity="0.95" />
+              <polygon points="52,8 48,2  56,2" fill="#c9a84c" opacity="0.95" />
+              <path
+                d="M11 24 Q30 6 49 24"
+                stroke="#c9a84c"
+                stroke-width="1.8"
+                fill="none"
+                stroke-linecap="round"
+              />
+              <rect
+                x="11"
+                y="36"
+                width="38"
+                height="3"
+                rx="1"
+                fill="#6b5520"
+                opacity="0.9"
+              />
+              <rect
+                x="11"
+                y="50"
+                width="38"
+                height="3"
+                rx="1"
+                fill="#4a3d18"
+                opacity="0.9"
+              />
+              <line
+                x1="19"
+                y1="16"
+                x2="19"
+                y2="53"
+                stroke="#8a6e2e"
+                stroke-width="2"
+              />
+              <line
+                x1="30"
+                y1="12"
+                x2="30"
+                y2="53"
+                stroke="#c9a84c"
+                stroke-width="2.5"
+              />
+              <line
+                x1="41"
+                y1="16"
+                x2="41"
+                y2="53"
+                stroke="#8a6e2e"
+                stroke-width="2"
+              />
+              <polygon points="19,16 16,9  22,9" fill="#c9a84c" opacity="0.8" />
+              <polygon points="30,12 27,5  33,5" fill="#c9a84c" opacity="1" />
+              <polygon points="41,16 38,9  44,9" fill="#c9a84c" opacity="0.8" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="hero-photo p5">
+          <img
+            src="assets/images/demiri/2.jpg"
+            alt="Kovana željezna ograda s ukrasnim elementima"
+            class="hero-photo-img"
+          />
+
+          <div class="hero-icon-badge b5">
+            <svg
+              class="iron-ornament"
+              viewBox="0 0 280 280"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="10"
+                y="10"
+                width="260"
+                height="260"
+                stroke="#c9a84c"
+                stroke-width="0.5"
+                opacity="0.4"
+              />
+              <rect
+                x="20"
+                y="20"
+                width="240"
+                height="240"
+                stroke="#c9a84c"
+                stroke-width="0.3"
+                opacity="0.25"
+              />
+
+              <rect
+                x="50"
+                y="50"
+                width="180"
+                height="5"
+                rx="1"
+                fill="#6b5520"
+                opacity="0.9"
+              />
+              <rect
+                x="45"
+                y="47"
+                width="190"
+                height="3"
+                rx="1"
+                fill="#4a3d18"
+                opacity="0.8"
+              />
+
+              <line
+                x1="60"
+                y1="65"
+                x2="60"
+                y2="195"
+                stroke="#8a6e2e"
+                stroke-width="3"
+              />
+              <line
+                x1="85"
+                y1="65"
+                x2="85"
+                y2="195"
+                stroke="#8a6e2e"
+                stroke-width="3"
+              />
+              <line
+                x1="110"
+                y1="65"
+                x2="110"
+                y2="195"
+                stroke="#c9a84c"
+                stroke-width="4"
+              />
+              <line
+                x1="135"
+                y1="65"
+                x2="135"
+                y2="195"
+                stroke="#8a6e2e"
+                stroke-width="3"
+              />
+              <line
+                x1="160"
+                y1="65"
+                x2="160"
+                y2="195"
+                stroke="#8a6e2e"
+                stroke-width="3"
+              />
+              <line
+                x1="185"
+                y1="65"
+                x2="185"
+                y2="195"
+                stroke="#8a6e2e"
+                stroke-width="3"
+              />
+              <line
+                x1="210"
+                y1="65"
+                x2="210"
+                y2="195"
+                stroke="#c9a84c"
+                stroke-width="4"
+              />
+
+              <rect
+                x="60"
+                y="115"
+                width="160"
+                height="3"
+                rx="1"
+                fill="#6b5520"
+              />
+
+              <circle
+                cx="135"
+                cy="115"
+                r="15"
+                stroke="#c9a84c"
+                stroke-width="1.5"
+                fill="none"
+                opacity="0.8"
+              />
+              <circle cx="135" cy="115" r="5" fill="#c9a84c" opacity="0.6" />
+
+              <path
+                d="M125 115 Q130 110 135 115 Q130 120 125 115Z"
+                fill="#8a6e2e"
+                opacity="0.7"
+              />
+              <path
+                d="M145 115 Q140 110 135 115 Q140 120 145 115Z"
+                fill="#8a6e2e"
+                opacity="0.7"
+              />
+
+              <rect
+                x="50"
+                y="195"
+                width="180"
+                height="8"
+                rx="2"
+                fill="#6b5520"
+              />
+              <rect
+                x="45"
+                y="203"
+                width="190"
+                height="3"
+                rx="1"
+                fill="#4a3d18"
+                opacity="0.8"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </header>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" aria-labelledby="about-title">
+      <div
+        style="
+          padding: 9rem 0;
+          background: linear-gradient(
+            180deg,
+            var(--black) 0%,
+            var(--deep) 100%
+          );
+        "
+      >
+        <div class="section-inner">
+          <div class="about-grid">
+            <!-- Visual -->
+            <div class="about-visual reveal-left">
+              <div class="about-corner-decor" aria-hidden="true"></div>
+              <div class="about-image-frame">
+                <!-- Artistic placeholder representing a blacksmith at work -->
+                <img
+                  src="assets/images/welder-at-work.png"
+                  alt="Majstor kovač, kuje željezne ograde u svojoj radionici. (AI generisana ilustracija)"
+                  class="about-image"
+                />
+
+                <div
+                  class="about-accent-box"
+                  aria-label="Više od 25 godina iskustva"
+                >
+                  <div class="num">5+</div>
+                  <div class="label">Godina Zanata</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Text -->
+            <div class="about-text reveal-right">
+              <span class="section-label">Naša Priča</span>
+              <span class="gold-line" aria-hidden="true"></span>
+              <h2 class="display-title" id="about-title">
+                Željezo Oblikovano<br />Strpljivim Rukama
+              </h2>
+              <p>
+                <strong>Senad Musić</strong> bavi se kovanjem željeza već 5
+                godina
+              </p>
+              <p>
+                Iz Tuzle projektuje i kuje kovane željezne ograde, ulazne
+                kapije, vrtne rukohvate i dekorativnu kovanu galanteriju za
+                privatne naručioce širom Bosne i Hercegovine. Bez kataloga, bez
+                prečica — samo komadi rađeni prema vašem imanju, vašem ukusu i
+                vašem budžetu.
+              </p>
+              <ul class="values-list" aria-label="Naše vrijednosti">
+                <li>
+                  Svi radovi individualno projektovani i ručno kovani po
+                  narudžbi
+                </li>
+                <li>
+                  Vruće pocinčano za decenijsku otpornost na vremenske uvjete
+                </li>
+                <li>Besplatno mjerenje i konsultacija na licu mjesta</li>
+                <li>Garantovana zanatska izrada — doživotno servisiranje</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FENCES ===================== -->
+    <section id="fences" aria-labelledby="fences-title">
+      <div
+        class="fences-wrapper"
+        style="padding: 9rem 0; background: var(--deep)"
+      >
+        <div class="section-inner">
+          <div class="fences-header reveal">
+            <span class="section-label">Naše Zanatstvo</span>
+            <span
+              class="gold-line"
+              style="margin: 1.5rem auto"
+              aria-hidden="true"
+            ></span>
+            <h2 class="display-title" id="fences-title">
+              Vrste Kovanih Radova
+            </h2>
+            <p>
+              Od raskošnih ulaznih kapija do filigranskih vrtnih rukohvata —
+              svaki stil se kuje po narudžbi i gradi da traje generacijama.
+            </p>
+          </div>
+
+          <div class="fences-grid" role="list">
+            <!-- Card 1 -->
+            <article
+              class="fence-card reveal"
+              data-delay="1"
+              role="listitem"
+              data-type="klizne-kapije"
+              data-desc="Tradicionalne ograde od vertikalnih šipki sa vrhovima kopalja i ručno kovanim vijugama. Najdugotrajniji izbor za ograđivanje imovine."
+              aria-label="Klasične Panelne Ograde — kliknite za galeriju"
+            >
+              <div class="fence-card-bg classic" aria-hidden="true"></div>
+              <div class="fence-card-ornament" aria-hidden="true">
+                <svg
+                  viewBox="0 0 120 200"
+                  width="90"
+                  height="150"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g stroke="#c9a84c" stroke-width="1.5">
+                    <line x1="20" y1="10" x2="20" y2="190" />
+                    <line x1="50" y1="5" x2="50" y2="190" />
+                    <line x1="70" y1="5" x2="70" y2="190" />
+                    <line x1="100" y1="10" x2="100" y2="190" />
+                    <line x1="10" y1="60" x2="110" y2="60" />
+                    <line x1="10" y1="140" x2="110" y2="140" />
+                    <polygon points="50,5 46,18 54,18" fill="#c9a84c" />
+                    <polygon points="70,5 66,18 74,18" fill="#c9a84c" />
+                  </g>
+                </svg>
+              </div>
+              <div class="fence-card-overlay" aria-hidden="true"></div>
+              <div class="fence-card-content">
+                <div class="fence-card-number">01</div>
+                <h3 class="fence-card-title">Klizne kapije</h3>
+                <p class="fence-card-desc">
+                  Tradicionalni okviri od vertikalnih šipki s vrhovima kopalja i
+                  ručno kovanim vijugama. Vječno rješenje za svako imanje.
+                </p>
+                <div class="fence-card-btn" aria-hidden="true">
+                  <span class="line"></span> Pogledaj Galeriju
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article
+              class="fence-card reveal"
+              data-delay="2"
+              role="listitem"
+              data-type="balkonske-ograde"
+              data-desc="Raskošni dizajni s vijugama i ljiljanima za vrtove, historijska imanja i sve lokacije koje zahtijevaju vizuelnu veličanstvenost."
+              aria-label="Ornamentalne Dekorativne Ograde — kliknite za galeriju"
+            >
+              <div class="fence-card-bg ornate" aria-hidden="true"></div>
+              <div class="fence-card-ornament" aria-hidden="true">
+                <svg
+                  viewBox="0 0 120 200"
+                  width="90"
+                  height="150"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g stroke="#c9a84c" stroke-width="1">
+                    <path d="M60 10 C40 30 30 50 40 70 C50 90 60 85 60 70" />
+                    <path d="M60 10 C80 30 90 50 80 70 C70 90 60 85 60 70" />
+                    <path
+                      d="M60 70 C40 90 30 110 40 130 C50 150 60 145 60 130"
+                    />
+                    <path
+                      d="M60 70 C80 90 90 110 80 130 C70 150 60 145 60 130"
+                    />
+                    <circle cx="60" cy="10" r="5" fill="#c9a84c" />
+                    <circle
+                      cx="60"
+                      cy="70"
+                      r="4"
+                      fill="#c9a84c"
+                      opacity="0.7"
+                    />
+                    <line x1="60" y1="130" x2="60" y2="190" />
+                    <line x1="10" y1="55" x2="110" y2="55" />
+                    <line x1="10" y1="145" x2="110" y2="145" />
+                  </g>
+                </svg>
+              </div>
+              <div class="fence-card-overlay" aria-hidden="true"></div>
+              <div class="fence-card-content">
+                <div class="fence-card-number">02</div>
+                <h3 class="fence-card-title">Balkonske ograde</h3>
+                <p class="fence-card-desc">
+                  Raskošni dizajni s vijugama i ljiljanima — za vrtove,
+                  historijska imanja i sve lokacije koje zahtijevaju vizuelnu
+                  veličanstvenost.
+                </p>
+                <div class="fence-card-btn" aria-hidden="true">
+                  <span class="line"></span> Pogledaj Galeriju
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article
+              class="fence-card reveal"
+              data-delay="3"
+              role="listitem"
+              data-type="demiri"
+              data-desc="Teške čelične panelne ploče i palisade protiv penjanja za poslovne objekte kojima je potrebna ozbiljna sigurnost perimetra."
+              aria-label="Industrial & Security Fences - click to view gallery"
+            >
+              <div class="fence-card-bg industrial" aria-hidden="true"></div>
+              <div class="fence-card-ornament" aria-hidden="true">
+                <svg
+                  viewBox="0 0 120 200"
+                  width="90"
+                  height="150"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g stroke="#9e9890" stroke-width="2">
+                    <line x1="15" y1="10" x2="15" y2="190" />
+                    <line x1="35" y1="10" x2="35" y2="190" />
+                    <line x1="55" y1="10" x2="55" y2="190" />
+                    <line x1="65" y1="10" x2="65" y2="190" />
+                    <line x1="85" y1="10" x2="85" y2="190" />
+                    <line x1="105" y1="10" x2="105" y2="190" />
+                    <line x1="5" y1="50" x2="115" y2="50" />
+                    <line x1="5" y1="100" x2="115" y2="100" />
+                    <line x1="5" y1="150" x2="115" y2="150" />
+                  </g>
+                  <g fill="#9e9890" opacity="0.6">
+                    <polygon points="15,10 11,22 19,22" />
+                    <polygon points="35,10 31,22 39,22" />
+                    <polygon points="55,10 51,22 59,22" />
+                    <polygon points="65,10 61,22 69,22" />
+                    <polygon points="85,10 81,22 89,22" />
+                    <polygon points="105,10 101,22 109,22" />
+                  </g>
+                </svg>
+              </div>
+              <div class="fence-card-overlay" aria-hidden="true"></div>
+              <div class="fence-card-content">
+                <div class="fence-card-number">03</div>
+                <h3 class="fence-card-title">Demiri</h3>
+                <p class="fence-card-desc">
+                  Teške palisade i paneli za penjanje za poslovne objekte kojima
+                  je potrebna ozbiljna zaštita perimetra.
+                </p>
+                <div class="fence-card-btn" aria-hidden="true">
+                  <span class="line"></span> Pogledaj Galeriju
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article
+              class="fence-card reveal"
+              data-delay="4"
+              role="listitem"
+              data-type="dvorisne-ograde"
+              data-desc="Lagani paneli s botaničkim motivima — vinova loza, list i cvijet — koji uokviruju vrt a da ga ne preplavljuju."
+              aria-label="Garden & Estate Railings - click to view gallery"
+            >
+              <div class="fence-card-bg garden" aria-hidden="true"></div>
+              <div class="fence-card-ornament" aria-hidden="true">
+                <svg
+                  viewBox="0 0 120 200"
+                  width="90"
+                  height="150"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g stroke="#6b8a4c" stroke-width="1.2">
+                    <line x1="60" y1="10" x2="60" y2="190" />
+                    <line x1="30" y1="40" x2="30" y2="190" />
+                    <line x1="90" y1="40" x2="90" y2="190" />
+                    <!-- Vine -->
+                    <path
+                      d="M60 60 Q45 75 30 70 Q45 65 60 80 Q75 65 90 70 Q75 75 60 60"
+                    />
+                    <path
+                      d="M60 100 Q45 115 30 110 Q45 105 60 120 Q75 105 90 110 Q75 115 60 100"
+                    />
+                    <!-- Leaves -->
+                    <ellipse
+                      cx="35"
+                      cy="72"
+                      rx="8"
+                      ry="4"
+                      transform="rotate(-30 35 72)"
+                      fill="#4a6a30"
+                      opacity="0.5"
+                    />
+                    <ellipse
+                      cx="85"
+                      cy="72"
+                      rx="8"
+                      ry="4"
+                      transform="rotate(30 85 72)"
+                      fill="#4a6a30"
+                      opacity="0.5"
+                    />
+                    <line x1="10" y1="160" x2="110" y2="160" />
+                  </g>
+                  <circle cx="60" cy="10" r="6" fill="#c9a84c" opacity="0.7" />
+                  <circle cx="30" cy="40" r="4" fill="#c9a84c" opacity="0.5" />
+                  <circle cx="90" cy="40" r="4" fill="#c9a84c" opacity="0.5" />
+                </svg>
+              </div>
+              <div class="fence-card-overlay" aria-hidden="true"></div>
+              <div class="fence-card-content">
+                <div class="fence-card-number">04</div>
+                <h3 class="fence-card-title">Dvorišne ograde</h3>
+                <p class="fence-card-desc">
+                  Botanički motivi vinove loze, lista i cvijeta koji prekrasno
+                  uokviruju vaš vrt ne narušavajući pejzaž.
+                </p>
+                <div class="fence-card-btn" aria-hidden="true">
+                  <span class="line"></span> Pogledaj Galeriju
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article
+              class="fence-card reveal"
+              data-delay="5"
+              role="listitem"
+              data-type="krilne-kapije"
+              data-desc="Raskošne dvostruke krilne kapije, pješačke kapije i automatske klizne kapije — kruna svakog imanja."
+              aria-label="Ulazne Kapije — kliknite za galeriju"
+            >
+              <div class="fence-card-bg gate" aria-hidden="true"></div>
+              <div class="fence-card-ornament" aria-hidden="true">
+                <svg
+                  viewBox="0 0 160 200"
+                  width="120"
+                  height="150"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <!-- Gate arch -->
+                  <path
+                    d="M20 100 L20 30 Q80 0 140 30 L140 100"
+                    stroke="#c9a84c"
+                    stroke-width="1.5"
+                    fill="none"
+                  />
+                  <!-- Gate bars left -->
+                  <g stroke="#8a6e2e" stroke-width="2.5">
+                    <line x1="30" y1="40" x2="30" y2="200" />
+                    <line x1="50" y1="35" x2="50" y2="200" />
+                    <line x1="70" y1="32" x2="70" y2="200" />
+                    <line x1="90" y1="32" x2="90" y2="200" />
+                    <line x1="110" y1="35" x2="110" y2="200" />
+                    <line x1="130" y1="40" x2="130" y2="200" />
+                  </g>
+                  <!-- Rails -->
+                  <line
+                    x1="20"
+                    y1="100"
+                    x2="140"
+                    y2="100"
+                    stroke="#6b5520"
+                    stroke-width="4"
+                  />
+                  <line
+                    x1="20"
+                    y1="160"
+                    x2="140"
+                    y2="160"
+                    stroke="#6b5520"
+                    stroke-width="4"
+                  />
+                  <!-- Spear tips -->
+                  <g fill="#c9a84c" opacity="0.8">
+                    <polygon points="50,35 46,50 54,50" />
+                    <polygon points="70,32 66,48 74,48" />
+                    <polygon points="80,28 75,46 85,46" />
+                    <polygon points="90,32 86,48 94,48" />
+                    <polygon points="110,35 106,50 114,50" />
+                  </g>
+                  <!-- Scroll ornament centre -->
+                  <circle
+                    cx="80"
+                    cy="130"
+                    r="10"
+                    stroke="#c9a84c"
+                    stroke-width="1"
+                    fill="none"
+                    opacity="0.8"
+                  />
+                  <circle cx="80" cy="130" r="4" fill="#c9a84c" opacity="0.5" />
+                </svg>
+              </div>
+              <div class="fence-card-overlay" aria-hidden="true"></div>
+              <div class="fence-card-content">
+                <div class="fence-card-number">05</div>
+                <h3 class="fence-card-title">Krilne kapije</h3>
+                <p class="fence-card-desc">
+                  Raskošne dvostruke krilne i klizne kapije — kruna svakog
+                  imanja, kovana da ostavi trajan utisak.
+                </p>
+                <div class="fence-card-btn" aria-hidden="true">
+                  <span class="line"></span> Pogledaj Galeriju
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article
+              class="fence-card reveal"
+              data-delay="6"
+              role="listitem"
+              data-type="stubisne-ograde"
+              data-desc="Unutrašnji i vanjski rukohvati za stepeništa, terase i balkone — sigurnost i elegancija kovane u jedno."
+              aria-label="Balcony & Stair Railings - click to view gallery"
+            >
+              <div class="fence-card-bg railing" aria-hidden="true"></div>
+              <div class="fence-card-ornament" aria-hidden="true">
+                <svg
+                  viewBox="0 0 160 200"
+                  width="120"
+                  height="150"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <!-- Diagonal handrail -->
+                  <path
+                    d="M20 60 L140 140"
+                    stroke="#c9a84c"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                  />
+                  <!-- Balusters -->
+                  <g stroke="#8a6e2e" stroke-width="2">
+                    <line x1="35" y1="68" x2="35" y2="180" />
+                    <line x1="60" y1="80" x2="60" y2="180" />
+                    <line x1="85" y1="92" x2="85" y2="180" />
+                    <line x1="110" y1="104" x2="110" y2="180" />
+                    <line x1="130" y1="116" x2="130" y2="180" />
+                  </g>
+                  <!-- Newel post -->
+                  <line
+                    x1="20"
+                    y1="55"
+                    x2="20"
+                    y2="180"
+                    stroke="#c9a84c"
+                    stroke-width="4"
+                  />
+                  <!-- Bottom rail -->
+                  <line
+                    x1="20"
+                    y1="180"
+                    x2="145"
+                    y2="180"
+                    stroke="#6b5520"
+                    stroke-width="4"
+                  />
+                  <!-- Finials -->
+                  <circle cx="20" cy="50" r="7" fill="#c9a84c" opacity="0.8" />
+                  <g fill="#8a6e2e" opacity="0.7">
+                    <polygon points="35,68 31,58 39,58" />
+                    <polygon points="60,80 56,70 64,70" />
+                    <polygon points="85,92 81,82 89,82" />
+                    <polygon points="110,104 106,94 114,94" />
+                    <polygon points="130,116 126,106 134,106" />
+                  </g>
+                </svg>
+              </div>
+              <div class="fence-card-overlay" aria-hidden="true"></div>
+              <div class="fence-card-content">
+                <div class="fence-card-number">06</div>
+                <h3 class="fence-card-title">Stubišne ograde</h3>
+                <p class="fence-card-desc">
+                  Unutrašnji i vanjski rukohvati za stepeništa, terase i balkone
+                  — sigurnost i elegancija kovane u jedno.
+                </p>
+                <div class="fence-card-btn" aria-hidden="true">
+                  <span class="line"></span> Pogledaj Galeriju
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- /.fences-grid -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALLERY MODAL ===================== -->
+    <div
+      id="gallery-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title-text"
+    >
+      <div class="modal-backdrop" id="modal-backdrop"></div>
+      <div class="modal-box">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-title-text">Galerija</h2>
+          <button
+            class="modal-close"
+            id="modal-close"
+            aria-label="Zatvori galeriju"
+          >
+            ✕
+          </button>
+        </div>
+        <div class="modal-gallery" id="modal-gallery" role="list">
+          <!-- Popunjava JavaScript -->
+        </div>
+        <div class="modal-footer">
+          <p>Kliknite na sliku za povećanje · Pritisnite Esc za zatvaranje</p>
+          <a
+            href="#contact"
+            id="modal-quote-link"
+            class="btn-primary"
+            style="font-size: 0.65rem; padding: 0.6rem 1.2rem"
+          >
+            <span>Zatražite Ponudu</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== PROCESS ===================== -->
+    <section id="process" aria-labelledby="process-title">
+      <div
+        style="
+          padding: 9rem 0;
+          background: linear-gradient(
+            180deg,
+            var(--deep) 0%,
+            var(--black) 100%
+          );
+        "
+      >
+        <div class="section-inner">
+          <div class="process-header reveal">
+            <span class="section-label">Kako Funkcioniše</span>
+            <span
+              class="gold-line"
+              style="margin: 1.5rem auto"
+              aria-hidden="true"
+            ></span>
+            <h2 class="display-title" id="process-title">Od Skice do Čelika</h2>
+          </div>
+
+          <div class="process-steps" role="list">
+            <div class="process-step reveal" data-delay="1" role="listitem">
+              <div class="step-num"><span>I</span></div>
+              <h3 class="step-title">Konsultacija</h3>
+              <p class="step-desc">
+                Dolazim na vaše imanje, mjerim i slušam vaše ideje. Bez obaveza,
+                bez naknade.
+              </p>
+            </div>
+            <div class="process-step reveal" data-delay="2" role="listitem">
+              <div class="step-num"><span>II</span></div>
+              <h3 class="step-title">Dizajn</h3>
+              <p class="step-desc">
+                Ručno nacrtani dizajn i pisana ponuda pripremaju se za vaše
+                odobrenje — prije nego što se dotakne imalo metala.
+              </p>
+            </div>
+            <div class="process-step reveal" data-delay="3" role="listitem">
+              <div class="step-num"><span>III</span></div>
+              <h3 class="step-title">Kovanje</h3>
+              <p class="step-desc">
+                Svaki element se ručno kuje u radionici, završava vrućim
+                pocinčavanjem i temeljnim premazom.
+              </p>
+            </div>
+            <div class="process-step reveal" data-delay="4" role="listitem">
+              <div class="step-num"><span>IV</span></div>
+              <h3 class="step-title">Ugradnja</h3>
+              <p class="step-desc">
+                Ugrađuje se na licu mjesta po profesionalnim standardima, sa
+                završnim premazom boje po vašem izboru.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIAL ===================== -->
+    <section id="testimonial" aria-label="Preporuka klijenta">
+      <div class="section-inner">
+        <div class="reveal">
+          <div class="testimonial-stars" aria-label="5 zvjezdica">★★★★★</div>
+          <blockquote class="testimonial-quote">
+            "Senad je iskovao kapiju i ogradu za naše imanje o kojima gosti još
+            uvijek govore dvadeset godina kasnije. Zanatska izrada je izvanredna
+            — svaka vijuga postavljena je slobodnim okom, svaki spoj je
+            nevidljiv. Nikada ne bih otišao nigdje drugdje."
+          </blockquote>
+          <cite class="testimonial-author">— M. Begović, Tuzla</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div style="padding: 9rem 0; background: var(--black)">
+        <div class="section-inner">
+          <div class="contact-grid">
+            <!-- Info -->
+            <div class="contact-info reveal-left">
+              <span class="section-label">Kontaktirajte Nas</span>
+              <span class="gold-line" aria-hidden="true"></span>
+              <h2 class="display-title" id="contact-title">
+                Izgradimo<br />Nešto Trajno
+              </h2>
+              <p>
+                Svaki projekt počinje razgovorom. Pošaljite mi poruku sa svojim
+                idejama i dogovoriću besplatan obilazak na licu mjesta u terminu
+                koji vama odgovara.
+              </p>
+
+              <ul class="contact-details" aria-label="Kontakt detalji">
+                <li class="contact-detail-item">
+                  <div class="detail-icon" aria-hidden="true">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.72A2 2 0 012.18 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.1a16 16 0 006 6l.59-.59a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="detail-label">Telefon</div>
+                    <div class="detail-value">
+                      <a href="tel:+38761682415" style="color: inherit"
+                        >+387 61 682 415</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="contact-detail-item">
+                  <div class="detail-icon" aria-hidden="true">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                      />
+                      <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="detail-label">E-pošta</div>
+                    <div class="detail-value">music.s@bih.net.ba</div>
+                  </div>
+                </li>
+                <li class="contact-detail-item">
+                  <div class="detail-icon" aria-hidden="true">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    >
+                      <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="detail-label">Radionica</div>
+                    <div class="detail-value">Kovačka 14, Tuzla, BiH</div>
+                  </div>
+                </li>
+                <li class="contact-detail-item">
+                  <div class="detail-icon" aria-hidden="true">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <polyline points="12,6 12,12 16,14" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="detail-label">Radno Vrijeme</div>
+                    <div class="detail-value">Pon-Pet 08:00-17:00</div>
+                  </div>
+                </li>
+                <li class="contact-detail-item">
+                  <div class="detail-icon" aria-hidden="true">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    >
+                      <path
+                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="detail-label">Besplatan poziv/poruka</div>
+                    <div
+                      class="detail-value"
+                      style="
+                        display: flex;
+                        gap: 18px;
+                        margin-top: 10px;
+                        align-items: center;
+                      "
+                    >
+                      <a
+                        href="https://wa.me/38761682415"
+                        aria-label="WhatsApp"
+                        class="brand-link"
+                      >
+                        <img
+                          src="https://cdn.simpleicons.org/whatsapp/25D366"
+                          width="22"
+                          height="22"
+                          alt="WhatsApp"
+                        />
+                      </a>
+
+                      <a
+                        href="viber://chat?number=%2B38761682415"
+                        aria-label="Viber"
+                        class="brand-link"
+                      >
+                        <img
+                          src="https://cdn.simpleicons.org/viber/7360F2"
+                          width="22"
+                          height="22"
+                          alt="Viber"
+                        />
+                      </a>
+
+                      <a
+                        href="https://www.facebook.com/kovane.ograde.music"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Facebook"
+                        class="brand-link"
+                      >
+                        <img
+                          src="https://cdn.simpleicons.org/facebook/1877F2"
+                          width="22"
+                          height="22"
+                          alt="Facebook"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <!-- Map -->
+              <div class="map-embed" aria-label="Karta lokacije radionice">
+                <iframe
+                  title="Karta lokacije Kovač Kovanice"
+                  loading="lazy"
+                  allowfullscreen
+                  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=18.6700%2C44.5300%2C18.7200%2C44.5600&layer=mapnik&marker=44.5384%2C18.6936"
+                >
+                </iframe>
+                <div class="map-overlay" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <!-- Form -->
+            <div
+              class="contact-form reveal-right"
+              role="form"
+              aria-label="Kontakt forma"
+            >
+              <h3 class="form-title">Pošaljite Poruku</h3>
+
+              <div id="form-fields">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="f-name">Ime</label>
+                    <input
+                      type="text"
+                      id="f-name"
+                      name="first_name"
+                      class="form-control"
+                      placeholder="Marko"
+                      autocomplete="given-name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="f-surname">Prezime</label>
+                    <input
+                      type="text"
+                      id="f-surname"
+                      name="last_name"
+                      class="form-control"
+                      placeholder="Begović"
+                      autocomplete="family-name"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="f-email">E-pošta</label>
+                    <input
+                      type="email"
+                      id="f-email"
+                      name="email"
+                      class="form-control"
+                      placeholder="marko@email.com"
+                      autocomplete="email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="f-phone">Telefon (opcionalno)</label>
+                    <input
+                      type="tel"
+                      id="f-phone"
+                      name="phone"
+                      class="form-control"
+                      placeholder="+387 61 …"
+                      autocomplete="tel"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="f-type">Vrsta Rada</label>
+                  <select
+                    id="f-type"
+                    name="work_type"
+                    class="form-select"
+                    required
+                  >
+                    <option value="" disabled selected>
+                      Odaberite kategoriju…
+                    </option>
+                    <option value="classic">Klizna kapija</option>
+                    <option value="ornate">Krilna kapija</option>
+                    <option value="industrial">Dvorišna ograda</option>
+                    <option value="garden">Stubišna ograda</option>
+                    <option value="gate">Demiri</option>
+                    <option value="railing">Balkonska ograda</option>
+                    <option value="other">Ostalo / Nisam Siguran</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="f-message">Opišite svoj projekt</label>
+                  <textarea
+                    id="f-message"
+                    name="message"
+                    class="form-control"
+                    rows="4"
+                    placeholder="Okvirne dimenzije, ideje o stilu, željeni rok…"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="button" class="form-submit" id="form-submit-btn">
+                  <span>Pošalji Poruku</span>
+                </button>
+              </div>
+
+              <div class="form-success" id="form-success">
+                <div class="form-success-icon">✦</div>
+                <h3>Poruka Primljena</h3>
+                <p>
+                  Hvala vam. Senad će se javiti u roku od jednog radnog dana.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-logo">
+            Kovane Ograde Musić
+            <small>Osnov. 2024. · Tuzla, Bosna i Hercegovina</small>
+          </div>
+          <ul class="footer-links" role="list" aria-label="Footer navigacija">
+            <li><a href="#about">O nama</a></li>
+            <li><a href="#fences">Radovi</a></li>
+            <li><a href="#process">Proces</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copy">
+            © 2025 Kovane Ograde Musić. Sva prava zadržana.
+          </p>
+          <p class="footer-tagline">
+            Kovano rukom. Izgrađeno da traje generacijama.
+          </p>
+          <p class="footer-tagline">
+            Web stranicu skovao
+            <a
+              style="color: var(--gold-dim)"
+              aria-label="Link to developer portfolio"
+              target="_blank"
+              class="footer-dev-link"
+              href="https://www.omarcorbic.com/"
+            >
+              Omar Čorbić
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
