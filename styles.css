@@ -1913,6 +1913,7 @@ footer {
   color: var(--gold);
   opacity: 0;
   animation: fadeIn 0.6s 0.2s forwards;
+  text-align: center;
 }
 .loader-bar {
   width: 200px;
