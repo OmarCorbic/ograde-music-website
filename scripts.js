@@ -3,6 +3,7 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     document.getElementById("loader").classList.add("hidden");
   }, 1000);
+  preloadGalleries();
 });
 
 /* ---- Custom cursor ---- */
@@ -101,31 +102,30 @@ const basePath = window.location.pathname.endsWith("/")
   ? window.location.pathname
   : window.location.pathname.split("/").slice(0, -1).join("/") + "/";
 
-async function loadGalleryFromFolder(folderName) {
-  modalGallery.innerHTML = "";
+const preloadedGalleries = {};
 
-  for (let i = 1; i <= MAX_IMAGES_PER_FOLDER; i++) {
-    const imgPath = `${basePath}assets/images/${folderName}/${i}.jpg`;
-
-    console.log("Searching for:", imgPath); // Check your browser console!
-
-    const exists = await checkImageExists(imgPath);
-
-    if (exists) {
-      const imgWrapper = document.createElement("div");
-      imgWrapper.className = "modal-gallery-item";
-      imgWrapper.innerHTML = `<img src="${imgPath}" loading="lazy" alt="${folderName} ${i}">`;
-      modalGallery.appendChild(imgWrapper);
-    } else {
-      break;
+async function preloadGalleries() {
+  for (const folder of folderNames) {
+    const imgs = [];
+    for (let i = 1; i <= MAX_IMAGES_PER_FOLDER; i++) {
+      const imgPath = `${basePath}assets/images/${folder}/${i}.jpg`;
+      const exists = await checkImageExists(imgPath);
+      if (exists) {
+        const imgWrapper = document.createElement("div");
+        imgWrapper.className = "modal-gallery-item";
+        imgWrapper.innerHTML = `<img src="${imgPath}" loading="lazy" alt="${folder} ${i}">`;
+        imgs.push(imgWrapper);
+      } else {
+        break;
+      }
     }
+    preloadedGalleries[folder] = imgs;
   }
 }
 
 async function checkImageExists(url) {
   try {
     const response = await fetch(url, { method: "HEAD" });
-
     return (
       response.ok && response.headers.get("content-type")?.includes("image")
     );
@@ -135,11 +135,12 @@ async function checkImageExists(url) {
 }
 document.querySelectorAll(".fence-card").forEach((card) => {
   card.addEventListener("click", () => {
-    const type = card.dataset.type; // e.g., "kovane-ograde"
+    const type = card.dataset.type;
+    if (!folderNames.includes(type)) return; // Security check to prevent arbitrary folder access
     modalTitle.textContent = card.querySelector("h3").textContent;
-
-    loadGalleryFromFolder(type);
-
+    modalGallery.innerHTML = "";
+    const imgs = preloadedGalleries[type] || [];
+    imgs.forEach((img) => modalGallery.appendChild(img.cloneNode(true)));
     modal.classList.add("active");
     document.body.style.overflow = "hidden";
   });
